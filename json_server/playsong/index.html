@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="shortcut icon" href="images/icon-website.svg" />
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.2.1-web/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>Document</title>
+</head>
+<body>  
+    <div class="player">
+        <div class="dashboard">
+            <!-- Header -->
+            <header>
+                <h4>Now playing</h4>
+                <h2>String 57th & 9th</h2>
+            </header>
+
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb"></div>
+            </div>
+
+            <!-- Control -->
+            <div class="control">
+                <div class="adjust">
+                    <div class="btn btn-repeat">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+    
+                    <div class="btn btn-prev">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </div>
+    
+                    <div class="btn btn-toggle-play">
+                        <i class="fa-solid fa-pause icon-pause"></i>
+                        <i class="fa-solid fa-play icon-play"></i>
+                    </div>
+    
+                    <div class="btn btn-next">
+                        <i class="fa-solid fa-forward-step"></i>
+                    </div>
+    
+                    <div class="btn btn-random">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </div>
+
+                </div>
+                
+                <div class="range">
+                    <input type="range" id="progress" class="progress" value="0" step="1" min="0" max="100">
+                    <audio src="" id="audio"></audio>
+    
+                </div>
+            </div>
+            
+
+            <!-- <span class="next">Up next</span> -->
+
+
+        </div>
+        <!-- Playlist -->
+        <div class="playlist">
+        </div>
+    </div>
+    
+</body>
+<script src="./main.js"></script>
+</html>

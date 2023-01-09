@@ -1,0 +1,201 @@
+:root {
+    --primary-color: #ec1f54;
+    --text-color: #333 ;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: url('./assets/img/Hinh-Nen-Trang-9.jpeg'); */
+    background-color: #ccc;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.player {
+    position: relative;
+    max-width: 720px;
+    margin: 0 auto;
+    /* background-color: #ccc; */
+}
+
+.player .icon-pause {
+    display: none;
+}
+
+.player.playing .icon-pause {
+    display: inline-block;
+}
+
+.player.playing .icon-play {
+    display: none;
+}
+
+.dashboard {
+    padding: 16px 16px 14px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 480px;
+    background-color: #fff;
+    border-bottom: 1px solid #ebebeb;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header h4 {
+    font-size: 12px;
+    color: var(--primary-color);
+}
+
+header h2 {
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+/* cd */
+.cd {
+    width: 200px;
+    margin : auto;
+    display: flex;
+}
+
+.cd-thumb {
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    background-size: cover;
+    margin :auto;
+}
+/* CONTROL */
+.control {
+    padding: 18px 0 8px 0;
+}
+.adjust {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.control .btn {
+    color: #666;
+    padding: 18px;
+    font-size: 18px;
+}
+
+.control .btn.active {
+    color: var(--primary-color);
+}
+
+.control .btn-toggle-play {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 24px;
+}
+.range {
+    padding: 6px 32px 0;
+}
+
+.progress {
+    width: 100%;
+    height: 6px;
+    background-color: #d3d3d3;
+    -webkit-appearance: none;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    line-height: 14px;
+    
+}
+
+.progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    width: 12px;
+    height: 6px;
+    background-color: var(--primary-color);
+}
+
+/* PLAYLIST */
+.playlist {
+    margin-top: 385px;
+    padding: 24px 12px 12px 12px;
+    width: 480px;
+    background-color: #f3f2f7;
+    cursor: pointer;;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 8px 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.song.active {
+    background-color: var(--primary-color);
+}
+
+.song:active {
+    opacity: 0.8;
+}
+
+.song.active .option,
+.song.active .author,
+.song.active .tittle {
+    color: #fff;
+}
+
+.song .thumb {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    margin: 0 8px;
+    background-size: cover;
+
+}
+
+.song .body {
+    flex: 1;
+    padding: 0 16px;
+}
+
+.song .tittle {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.song .author {
+    font-size: 12px;
+    color: #999;
+}
+
+.song .option {
+    font-size: 18px;
+    padding: 16px 8px;
+    color:  #999;
+}
