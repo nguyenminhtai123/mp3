@@ -42,6 +42,7 @@ html {
     flex-direction: column;
     display: flex;
     margin-bottom: 16px;
+    /* float: left; */
 }
 .form-label,
 .form-msg {
@@ -96,4 +97,21 @@ html {
 }
 .form-submit:hover {
     background-color: #1ac7b6;
+}
+
+.form-check {
+    display: inline-block;
+    justify-content: space-between;
+    margin: 8px 8px;
+    text-align: center;
+    /* align-items: center; */
+    /* align-self: center; */
+    line-height: 1.6rem;
+    font-size: 1.4rem;
+    /* float: left; */
+}
+.form-control {
+    margin: 0 4px;
+    align-items: center;
+    line-height: 1.6rem;
 }
